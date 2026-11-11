@@ -1,0 +1,27 @@
+services:
+
+  connections:
+    container_name: Connections_Journal
+    image: 'postgres:latest'
+
+    environment:
+      POSTGRES_PASSWORD: POSTGRES
+      POSTGRES_USER: POSTGRES
+      POSTGRES_DB: connections_db
+    ports:
+      - '8080:5432'
+
+    restart: unless-stopped
+
+  vacancy:
+    image: 'postgres:latest'
+    container_name: Vacancy_DB
+
+    environment:
+      POSTGRES_USER: POSTGRES
+      POSTGRES_PASSWORD: POSTGRES
+      POSTGRES_DB: vacancy_db
+    ports:
+      - "9090:5432"
+
+    restart: unless-stopped

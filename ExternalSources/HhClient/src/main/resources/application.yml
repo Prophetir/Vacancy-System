@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: HhClient
+
+server:
+  port: 8082
+
+hh:
+  api:
+    client_id: ${CLIENT_ID}
+    client_secret: ${CLIENT_SECRET}
+    hh_user_agent: ${HH_USER_AGENT}
+
+    grant_type_refresh_token: ${GRANT_TYPE_REFRESH_TOKEN}
+    grant_type_client_credentials: ${GRANT_TYPE_CLIENT_CREDENTIALS}
+    grant_type_authorization_code: ${GRANT_TYPE_AUTHORIZATION_CODE}

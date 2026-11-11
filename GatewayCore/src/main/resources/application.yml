@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: Gateway_Core
+
+  datasource:
+    username: POSTGRES
+    password: POSTGRES
+
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:8080/connections_db
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org.springframework.boot.context.config: TRACE
+    com.zaxxer.hikari: DEBUG
+
+
+org:
+  springframework:
+    cloud:
+      gateway:
+        server:
+          mvc=DEBUG:

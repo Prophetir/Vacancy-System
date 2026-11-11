@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hh-vacancy-bot
+
+server:
+  port: 6060
+
+bot:
+  token: "8648777098:AAFoaKu0t-7T15R35Zn3rYsNd0sFlhTf5RI"
+  name: "hh vacancy bot"
